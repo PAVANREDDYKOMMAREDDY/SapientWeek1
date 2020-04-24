@@ -1,0 +1,11 @@
+package com.Sapient.Shapes;
+
+public class Square {
+
+	
+	public double calculateArea(double r)
+	{
+		return (r*r);
+	}
+
+}

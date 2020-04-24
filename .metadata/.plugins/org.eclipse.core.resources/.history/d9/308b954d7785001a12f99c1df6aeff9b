@@ -1,0 +1,29 @@
+package com.Sapient;
+
+public class fig_to_words {
+	static int kl;
+	public static String fig2words(long n)
+	{
+		buildmap();
+		String s="only";
+		while(n!=0)
+		{
+			long k=n%1000;
+			n=n/1000;
+			s=s+fun(k);
+			
+		}
+		return s;
+	}
+
+	private static void buildmap() {
+		// TODO Auto-generated method stub
+		kl++;
+	}
+
+	private static String fun(long k) {
+		// TODO Auto-generated method stub
+		
+		return null;
+	}
+}

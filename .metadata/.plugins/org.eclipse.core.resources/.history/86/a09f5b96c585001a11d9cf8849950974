@@ -1,0 +1,11 @@
+package com.Sapient.Shapes;
+
+public class Triangle {
+
+	
+	public double calculateArea(double r)
+	{
+		return (0.433*r*r);
+	}
+
+}

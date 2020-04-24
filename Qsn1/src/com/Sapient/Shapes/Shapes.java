@@ -1,0 +1,38 @@
+package com.Sapient.Shapes;
+
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+
+public class Shapes {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int noOfSides=3;double sideLength=12;
+		calculateShapeArea(noOfSides, sideLength);
+		noOfSides=4;sideLength=15;
+		calculateShapeArea(noOfSides, sideLength);
+		noOfSides=5;sideLength=15;
+		calculateShapeArea(noOfSides, sideLength);
+	}
+	static void calculateShapeArea(int no_of_sides,double side_len)
+	{
+		int n=no_of_sides;
+		if(n==1)
+		{
+			Circle c=new Circle();
+			System.out.println("The area of circle is "+c.calculateArea(new BigDecimal(side_len)).setScale(4, RoundingMode.UP));
+		}
+		else if(n==4)
+		{
+			Square s=new Square();
+			System.out.println("The area of circle is "+s.calculateArea(new BigDecimal(side_len)).setScale(4, RoundingMode.UP));
+		}
+		else if(n==3)
+		{
+			Triangle t=new Triangle();
+			System.out.println("The area of circle is "+t.calculateArea(new BigDecimal(side_len)).setScale(4, RoundingMode.UP));
+		}
+		else System.out.println("No Shapes Present");
+	}
+
+}

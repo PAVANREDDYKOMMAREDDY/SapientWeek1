@@ -1,0 +1,39 @@
+package com.Sapient.Shapes;
+
+import com.Publicis.Pjplrng.Circle;
+import com.Publicis.Pjplrng.Square;
+import com.Publicis.Pjplrng.Triangle;
+
+public class Shapes {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int noOfSides=3;double sideLength=12;
+		calculateShapeArea(noOfSides, sideLength);
+		noOfSides=4;sideLength=15;
+		calculateShapeArea(noOfSides, sideLength);
+		noOfSides=5;sideLength=15;
+		calculateShapeArea(noOfSides, sideLength);
+	}
+	static void calculateShapeArea(int no_of_sides,double side_len)
+	{
+		int n=no_of_sides;
+		if(n==1)
+		{
+			Circle c=new Circle();
+			System.out.println("The area of circle is "+c.calculateArea(side_len));
+		}
+		else if(n==4)
+		{
+			Square s=new Square();
+			System.out.println("The area of Square is "+s.calculateArea(side_len));
+		}
+		else if(n==3)
+		{
+			Triangle t=new Triangle();
+			System.out.println("The area of Triangle is "+t.calculateArea(side_len));
+		}
+		else System.out.println("No Shapes Present");
+	}
+
+}
