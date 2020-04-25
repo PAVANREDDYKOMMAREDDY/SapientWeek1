@@ -1,0 +1,24 @@
+package com.Sapient;
+
+import java.util.Scanner;
+
+public class maincls {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner s = new Scanner(System.in);
+
+		Command_Line1 ob=new Command_Line1();
+		ob.setData(s,5);
+		ob.display();
+		
+		System.out.println(fig_to_words.fig2words((long)19123));
+		
+		
+		nNumbers ar=new nNumbers();
+		ar.read();
+		ar.display();ar.sort();ar.display();ar.find(2);
+
+	}
+
+}

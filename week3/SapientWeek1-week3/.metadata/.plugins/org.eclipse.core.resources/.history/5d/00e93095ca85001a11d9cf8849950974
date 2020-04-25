@@ -1,0 +1,46 @@
+package com.Sapient;
+
+import java.util.Scanner;
+
+public class Command_Line1 {
+	public int no_items;
+	public double sum;
+	public double avg;
+	public double biggest=Integer.MAX_VALUE;
+	public double smallest=Integer.MIN_VALUE;
+	public double calData() {
+		
+		
+		try (Scanner s = new Scanner(System.in)) {
+			double n=s.nextInt();
+			return n;
+			
+		}
+		
+	}
+
+	public void setData(int no_items) {
+		this.no_items=no_items;
+		for(int i=0;i<no_items;i++)
+		{
+		
+			double n=calData();
+			sum+=n;
+			if(n>biggest)
+				biggest=n;
+			if(n<smallest)
+				smallest=n;
+		}
+		avg=sum/no_items;
+		
+	
+	}
+	public void display()
+	{
+		System.out.println("Smallest number : "+this.smallest);
+		System.out.println("largest number : "+this.biggest);
+		System.out.println("Sum of numbers : "+this.sum);
+		System.out.println("Average : "+this.avg);
+
+	}
+}

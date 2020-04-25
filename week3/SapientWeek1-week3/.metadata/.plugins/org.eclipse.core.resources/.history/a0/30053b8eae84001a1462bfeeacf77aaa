@@ -1,0 +1,15 @@
+package com.Sapient;
+
+public class fig_to_words {
+	public static String fig2words(long n)
+	{
+		String s="only";
+		while(n!=0)
+		{
+			int k=n%10;
+			n=n/10;
+			
+		}
+		return s;
+	}
+}

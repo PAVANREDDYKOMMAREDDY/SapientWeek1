@@ -1,0 +1,11 @@
+package com.Publicis.Pjplrng;
+
+public class Square {
+
+	
+	public double calculateArea(double r)
+	{
+		return (r*r);
+	}
+
+}
