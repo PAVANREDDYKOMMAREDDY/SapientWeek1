@@ -49,7 +49,7 @@ select batchcode, title, startdate from batches natural join courses where to_ch
 12.Write a query to display courses code, course title, course fees of the courses for which 
 no batches/training has been planned in the month of January and year 2012.
 
-select coursecode, title, fees from courses natural join batches where not (to_char(startdate,'mon')='may' and to_char(startdate,'yyyy')='2012');
+select coursecode, title, fees from courses natural join batches where not ((to_char(startdate,'mon')='may' and to_char(startdate,'yyyy')='2012'));
 
 
 13.Write a query which displays the names of all the modules of the course titled 'Oracle DBA'
